@@ -7,15 +7,19 @@ import { Provider } from 'react-redux';
 // Import  Config function of App Store
 import { createAppAsyncStore} from './store/config/storeConfig';
 import AppReduxSaga from './App ReduxSaga';
+import App from './App';
 
 //We create the App Store
 let appStore = createAppAsyncStore();
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <Provider store={appStore}>
-    <React.StrictMode>
-     <AppReduxSaga />
+  // <Provider store={appStore}>
+
+  // </Provider>
+
+      <React.StrictMode>
+        <App />
     </React.StrictMode> 
-  </Provider>
+  
 )
